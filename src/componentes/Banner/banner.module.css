@@ -1,0 +1,163 @@
+.banner {
+    padding: 3rem 7.5rem 6.25rem;
+    background-color: black;
+    color: var(--branco);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.titulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 4rem;
+    margin-top: 4.875rem;
+    margin-bottom: 2rem;
+}
+
+.paragrafo {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.imagens {
+    margin-top: 2vh;
+    position: relative;
+    height: 406px;
+}
+
+.imagens>.minhaFoto {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 18vw;
+    border-radius: 50%;
+}
+
+.imagens>.code {
+    position: absolute;
+    right: 7vw;
+    bottom: 0vw;
+    width: 25vw;
+    height: 100%;
+    border-radius: 80%;
+}
+
+@media(max-width: 1500px) {
+    .imagens {
+        margin-left: 50px;
+    }
+
+    .imagens>.code {
+        margin-left: 500px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .imagens > .code{
+        right: 1vh;
+        width: 400px;
+    }
+    .imagens > .minhaFoto{
+        width: 22vw;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .banner {
+        padding: 3.5rem 1.5rem;
+    }
+
+    .titulo {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .paragrafo {
+        margin-bottom: 1.5rem;
+    }
+
+    .imagens {
+        height: 338px;
+    }
+
+    .imagens>.minhaFoto {
+        width: 25vw;
+    }
+
+    .imagens>.code {
+        right: 10vw;
+        width: 35vw;
+    }
+}
+
+@media (max-width: 790px) {
+    .banner {
+        padding: 2rem 1rem;
+        display: block;
+    }
+
+    .titulo {
+        margin-bottom: 2rem;
+    }
+
+    .paragrafo {
+        margin-bottom: 2rem;
+    }
+
+    .imagens {
+        height: 307px;
+    }
+
+    .imagens>.minhaFoto,
+    .imagens>.code {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .imagens>.minhaFoto {
+        width: 170px;
+        transform: translate(5rem, 0px);
+    }
+
+    .imagens>.code {
+        width: 350px;
+        transform: translate(-1.5rem, 0px);
+    }
+}
+
+@media (max-width: 400px) {
+    .imagens{
+        width: 40%;
+        margin-left: 0vh;
+        height: 25vh;
+    }
+    .imagens .minhaFoto{
+        width: auto;
+        height: 200px;
+    }
+    .imagens .code{
+        display: none;
+    }
+   
+}
+
+@media (max-width: 370px) {
+    .imagens{
+        width: 100%;
+        margin-left: 0vh;
+        height: 25vh;
+    }
+    .imagens .minhaFoto{
+        width: auto;
+        height: 200px;
+        left: -20vh;
+    }
+    .imagens .code{
+        display: none;
+    }
+   
+}
